@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <button onclick="grneratepdf()">Dowenload PDF</button>
+        <!-- <button onclick="grneratepdf()"> generat now</button> -->
+        <!-- <button onclick="grneratepdf()"> generat now</button> -->
+        <!-- <button onclick="grneratepdf()"> generat now</button> -->
+
+        <div class="all_window">
+            <div class="cv_contaner" id="cv_contaner">
+                <h1 id="name" >khaled mohamed ahmed</h1>
+                <h2 id="job_title">web developer</h2>
+                <div class="call">
+                    
+                      <p id="phone">phone/  01114606624</p>
+                      <p id="whatsup">whatsup/ +2 01114606624</p>
+                      <p id="email">email/ khaledzaeed12@gmail.com</p>
+                      <p id="linkedin">https://www.linkedin.com/in/khaled-mohamed-ahmed</p>
+                </div>
+                <div class="about">
+                    <h2>about <hr></h2> 
+                    <p id="about">I am 27 years old I have a bachelor's degree in management information systems, I am looking
+                        for a full time job, I am good at English, And I am exempted from military service
+                    </p>
+                </div>
+                <div class="Education">
+                    <h2>education <hr></h2>
+                    <p id="edu_1">
+                        2017 - 2020 | Bachelor's degree Management Information Systems
+                    </p>
+                    <p id="edu_2">
+                        Pharaohs Higher Institute for Computers and Management Information Systems
+                        GPA is very good
+                    </p>
+                </div>
+                <div class="Experience">
+                    <h2>experience <hr></h2>
+                    <p  id="exper_1">Blogging and writing content for websites</p>  
+                    <p  id="exper_2">february 2022 - may 2022</p> 
+                    <p  id="exper_3">Website Administrator  </p>
+                    <p  id="exper_4">september 2021 - january 2022</p>
+                    <p  id="exper_5">Use and management of social media   </p>
+                    <p  id="exper_6">may 2021 - august 2021</p>
+                    <p  id="exper_7">Accountant in a contracting company  </p>
+                    <p  id="exper_8">december 2020 - april 2021</p>
+                    <p  id="exper_9">Systems Administrator  </p>
+                    <p  id="exper_10">october 2020 - december 2020</p>
+
+                </div>
+                <div class="Certificates">
+                    <h2>certificates <hr></h2>
+                    <p id="cert_1">
+                        CCNA networking course
+                    </p>
+                    <p id="cert_2">
+                        front end website design ( html -css -javascript )
+                    </p>
+                    <p id="cert_3">
+                        (Certificate of Attendance) Information network security risks and solutions
+                    </p>
+                    <p id="cert_4">
+                        (Certificate of attendance) Facebook Bot Event
+                    </p>
+                    <p id="cert_5">
+                        (Certificate of Attendance) An event for Android and desktop applications
+                    </p>
+                    <p id="cert_6">
+                        (Certificate of Attendance) An event for Android and desktop applications
+                    </p>
+                </div>
+                
+                <div class="Skills">
+                    <h2>skills <hr></h2>
+                    <p id="skil_1">Use of microsoft office </p>
+                    <p id="skil_2">Use of Google Apps</p>
+                    <p id="skil_3">SEO and Google Analytics</p>
+                    <p id="skil_4">Social media strategy</p>
+                    <p id="skil_5">Web content development</p>
+                    <p id="skil_6">Photo editing</p>
+                    <p id="skil_7">Writing content for blogs</p>
+                    <p id="skil_8">good in English</p>
+                </div>
+            </div>
+
+            <div class="sittings"> 
+                <section class="basics_settings">
+                    <button>edit</button> <button>%</button>
+                    <button>edit</button> <button>%</button>
+                    <button>edit</button> <button>%</button>
+                    <!-- <input type="color"><br><br> -->
+              
+                </section>
+               <!--- <div> 
+                    <input type="text"><button> تعديل الاسم </button><br>
+                    <input type="text"><button> تعديل الرقم </button><br>
+                    <input type="text"><button> تعديل الايميل </button><br>
+                    <input type="text"><button> تعديل لينكدان </button><br>
+                    
+                </div>-->
+                    <!-- <table>
+                        <tr>
+                            <td>d</td>
+                            <td>d</td>
+                            <td>d</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                         </tr>
+                         <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td>2</td>
+                        </tr>
+                    </table> -->
+                    <form class="info">
+                        <label>name</label>
+                        <input onkeyup="copying()" id="inp_name" value="khaled mohamed ahmed"><br>
+                        <label >job title</label>
+                        <input onkeyup="copying()"  id="inp_job" value="web developer"><br>
+                    </form><br>
+                    <form class="call">
+                        <label>phone</label>
+                        <input onkeyup="copying()"  id="inp_phone" value="01114606624"><br>
+                        <label>whatsup</label>
+                        <input onkeyup="copying()"  id="inp_whats" value="+2 01114606624"><br>
+                        <label>email </label>
+                        <input onkeyup="copying()"  id="inp_email" value="khaledzaeed12@gmail.com"><br>
+                        <label>linkedin</label>
+                        <input onkeyup="copying()"  id="inp_linkedin" value="www.linkedin.com/in">
+                    </form><br>
+                    <form>
+                        <label>about :</label><br>
+                        <!-- <textarea onkeyup="copying()"  id="inp_about" role="15"  cols="80" ></textarea> -->
+                        <input id="inp_about" onkeyup="copying()" value="I am 27 years old I have a bachelor's degree in management information systems, I am looking for a full time job, I am good at English, And I am exempted from military service ">
+                    </form>
+                    <form>
+                        <label>Education :</label><br>
+                        <!-- <textarea onkeyup="copying()" id="inp_edu1" role="5" cols="80"></textarea> -->
+                        <!-- <textarea onkeyup="copying()" id="inp_edu2" role="5" cols="80"></textarea> -->
+                        <input onkeyup="copying()" id="inp_edu1" value=" 2017 - 2020 | Bachelor's degree Management Information Systems "><br>
+                        <input onkeyup="copying()" id="inp_edu2" value=" Pharaohs Higher Institute for Computers and Management Information Systems GPA is very good "><br>
+                        <!-- <input class="areacontent" value="123"> -->
+                    </form><br>
+                    <form>
+                        <label>Experience :</label><br>
+                        <input id="inp_exp1" onkeyup="copying()" type="text" value="Blogging and writing content for websites">
+                        <input id="inp_exp2" onkeyup="copying()" type="text" value="february 2022 - may 2022"><br>
+                        <input id="inp_exp3" onkeyup="copying()" type="text" value="Website Administrator ">
+                        <input id="inp_exp4" onkeyup="copying()" type="text" value="september 2021 - january 2022"><br>
+                        <input id="inp_exp5" onkeyup="copying()" type="text" value="Use and management of social media ">
+                        <input id="inp_exp6" onkeyup="copying()" type="text" value="may 2021 - august 2021">
+                        <input id="inp_exp7" onkeyup="copying()" type="text" value="Accountant in a contracting company ">
+                        <input id="inp_exp8" onkeyup="copying()" type="text" value="december 2020 - april 2021">
+                        <input id="inp_exp9" onkeyup="copying()" type="text" value="Systems Administrator ">
+                        <input id="inp_exp10" onkeyup="copying()"type="text" value="october 2020 - december 2020">
+                        <br><icon>+</icon>
+                    </form><br>
+                    <form>
+                        <label>Certificates :</label><br>
+                        <input id="inp_cert1" onkeyup="copying()" type="text" value="CCNA networking course">
+                        <input id="inp_cert2" onkeyup="copying()" type="text" value="front end website design ( html -css -javascript )"><br>
+                        <input id="inp_cert3" onkeyup="copying()" type="text" value="(Certificate of Attendance) Information network security risks and solutions">
+                        <input id="inp_cert4" onkeyup="copying()" type="text" value="(Certificate of attendance) Facebook Bot Event"><br>
+                        <input id="inp_cert5" onkeyup="copying()" type="text" value="(Certificate of Attendance) An event for Android and desktop applications">
+                        <input id="inp_cert6" onkeyup="copying()" type="text" value="(Certificate of Attendance) An event for Android and desktop applications">
+                        <br><icon>+</icon>
+                    </form><br>
+                    <form>
+                        <label>Skills :</label><br>
+                        <input id="inp_skil_1" onkeyup="copying()" type="text" value="good in English"><br>
+                        <input id="inp_skil_2" onkeyup="copying()" type="text" value="Use of microsoft office"><br>
+                        <input id="inp_skil_3" onkeyup="copying()" type="text" value="Use of Google Apps"><br>
+                        <input id="inp_skil_4" onkeyup="copying()" type="text" value="SEO and Google Analytics"><br>
+                        <input id="inp_skil_5" onkeyup="copying()" type="text" value="Social media strategy"><br>
+                        <input id="inp_skil_6" onkeyup="copying()" type="text" value="Web content development"><br>
+                        <input id="inp_skil_7" onkeyup="copying()" type="text" value="Photo editing"><br>
+                        <input id="inp_skil_8" onkeyup="copying()" type="text" value="Writing content for blogs"><br>
+                        <icon>+</icon>
+                    </form>
+
+
+                    <!-- <button onclick="grneratepdf()">Dowenload PDF</button> -->
+
+                    <!-- <input class="titles_content" type="text" placeholder="wright" value="ssafasd">
+                    <div class="titles_settings"> تعديل القسم الاول</div>
+                    <input class="titles_content" type="text" placeholder="wright" value="ssafasd">
+                    <div class="titles_settings"> تعديل القسم الاول</div>
+                    <input class="titles_content" type="text" placeholder="wright" value="ssafasd">
+                    <div class="titles_settings"> تعديل القسم الاول</div>
+                    <input class="titles_content" type="text" placeholder="wright" value="ssafasd">
+                    <div class="titles_settings"> تعديل القسم الاول</div>
+                    <a download href="#.pdf"><div class="titles_settings"> تعديل القسم الاول</div></a>
+                     -->
+
+<!--                     
+                    حجم A4 (210 × 297 مم) بالبكسل
+                    مع DPI = 75 ، فإن دقة A4 لها 620 × 877 بكسل.;
+                    مع DPI = 150 ، فإن دقة A4 لها 1240 × 1754 بكسل.;
+                    مع DPI = 300 ، فإن دقة A4 لها 2480 × 3508 بكسل.. -->
+
+
+                
+            </div>
+        </div>
+
+     
+
+        
+        <!-- <div id="content" style="background:#4444 "> 
+            <h1>thank YOU!</h1>
+        </div>
+
+        <div class="the-paragraf">
+            <h3>create a free cv online</h3>
+            
+        </div> -->
+        
+        <script>
+
+
+
+                    
+
+
+                    function testy(){
+
+                        // console.log(name, phone, email, linkedin, about,edu_1,exper_1.cert_1,skil_1);
+                        //  alert('111');
+                            // document.getElementsByClassName("the_name").innerHTML += 'www';
+                            // alert(skills_in);
+                            // console.log(the_name.innerHTML)
+                            // var ff = document.getElementById('skills_in').value ;
+                            // console.log(document.getElementById('skills_in').value );
+                            // document.getElementById('skills_in').innerHTML ;
+                            // console.log(document.getElementById('job_title').innerText );
+                            // console.log(document.getElementsByClassName('the_name'));
+                            // document.getElementById('job_title').innerHTML =  'ffffff' ;
+
+
+                    }
+                    
+
+                        /*var name = document.getElementById('name').innerHTML;
+                        var phone = document.getElementById('phone').innerHTML;
+                        var email = document.getElementById('email').innerHTML;
+                        var linkedin = document.getElementById('linkedin').innerHTML;
+
+                        var about = document.getElementById('about').innerHTML;
+
+                        var edu_1 = document.getElementById('edu_1').innerHTML;
+                        var edu_2 = document.getElementById('edu_2').innerHTML;
+
+                        var exper_1 = document.getElementById('exper_1').innerHTML;
+                        var exper_2 = document.getElementById('exper_2').innerHTML;
+                        var exper_3 = document.getElementById('exper_3').innerHTML;
+                        var exper_4 = document.getElementById('exper_4').innerHTML;
+                        var exper_5 = document.getElementById('exper_5').innerHTML;
+                        var exper_6 = document.getElementById('exper_6').innerHTML;
+                        var exper_7 = document.getElementById('exper_7').innerHTML;
+                        var exper_8 = document.getElementById('exper_8').innerHTML;
+                        var exper_9 = document.getElementById('exper_9').innerHTML;
+                        var exper_10 = document.getElementById('exper_10').innerHTML;
+
+                        var cert_1 = document.getElementById('cert_1').innerHTML;
+                        var cert_2 = document.getElementById('cert_2').innerHTML;
+                        var cert_3 = document.getElementById('cert_3').innerHTML;
+                        var cert_4 = document.getElementById('cert_4').innerHTML;
+                        var cert_5 = document.getElementById('cert_5').innerHTML;*/
+
+                        var skil_1 = document.getElementById('skil_1').innerHTML;
+                        var skil_2 = document.getElementById('skil_2').innerHTML;
+                        var skil_3 = document.getElementById('skil_3').innerHTML;
+                        var skil_4 = document.getElementById('skil_4').innerHTML;
+                        var skil_5 = document.getElementById('skil_5').innerHTML;
+                        var skil_6 = document.getElementById('skil_6').innerHTML;
+                        var skil_7 = document.getElementById('skil_7').innerHTML;
+                        var skil_8 = document.getElementById('skil_8').innerHTML;
+
+
+
+
+                    function copying() {
+                        document.getElementById('name').innerHTML = document.getElementById('inp_name').value;
+                        document.getElementById('job_title').innerHTML = document.getElementById('inp_job').value;
+                        document.getElementById('phone').innerHTML = document.getElementById('inp_phone').value;
+                        document.getElementById('whatsup').innerHTML = document.getElementById('inp_whats').value;
+                        document.getElementById('email').innerHTML = document.getElementById('inp_email').value;
+                        document.getElementById('linkedin').innerHTML = document.getElementById('inp_linkedin').value;
+                        
+                        document.getElementById('about').innerHTML = document.getElementById('inp_about').value;
+
+                        document.getElementById('edu_1').innerHTML = document.getElementById('inp_edu1').value;
+                        document.getElementById('edu_2').innerHTML = document.getElementById('inp_edu2').value;
+
+                        document.getElementById('exper_1').innerHTML = document.getElementById('inp_exp1').value;
+                        document.getElementById('exper_2').innerHTML = document.getElementById('inp_exp2').value;
+                        document.getElementById('exper_3').innerHTML = document.getElementById('inp_exp3').value;
+                        document.getElementById('exper_4').innerHTML = document.getElementById('inp_exp4').value;
+                        document.getElementById('exper_5').innerHTML = document.getElementById('inp_exp5').value;
+                        document.getElementById('exper_6').innerHTML = document.getElementById('inp_exp6').value;
+                        document.getElementById('exper_7').innerHTML = document.getElementById('inp_exp7').value;
+                        document.getElementById('exper_8').innerHTML = document.getElementById('inp_exp8').value;
+                        document.getElementById('exper_9').innerHTML = document.getElementById('inp_exp9').value;
+                        document.getElementById('exper_10').innerHTML = document.getElementById('inp_exp10').value;
+
+                        document.getElementById('cert_1').innerHTML = document.getElementById('inp_cert1').value;
+                        document.getElementById('cert_2').innerHTML = document.getElementById('inp_cert2').value;
+                        document.getElementById('cert_3').innerHTML = document.getElementById('inp_cert3').value;
+                        document.getElementById('cert_4').innerHTML = document.getElementById('inp_cert4').value;
+                        document.getElementById('cert_5').innerHTML = document.getElementById('inp_cert5').value;
+                        document.getElementById('cert_6').innerHTML = document.getElementById('inp_cert6').value;
+                        
+                        document.getElementById('skil_1').innerHTML = document.getElementById('inp_skil_1').value;
+                        document.getElementById('skil_2').innerHTML = document.getElementById('inp_skil_2').value;
+                        document.getElementById('skil_3').innerHTML = document.getElementById('inp_skil_3').value;
+                        document.getElementById('skil_4').innerHTML = document.getElementById('inp_skil_4').value;
+                        document.getElementById('skil_5').innerHTML = document.getElementById('inp_skil_5').value;
+                        document.getElementById('skil_6').innerHTML = document.getElementById('inp_skil_6').value;
+                        document.getElementById('skil_7').innerHTML = document.getElementById('inp_skil_7').value;
+                        document.getElementById('skil_8').innerHTML = document.getElementById('inp_skil_8').value;
+                        console.log(skil_1,inp_skil_1);
+                        
+                        
+                    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            var mydiv = document.getElementById('content');
+            
+            function grneratepdf() {
+            // html2pdf(document.body).form().save();
+            // var element = document.getElementById('content');
+            // var opt = {
+            // margin:       1,
+            // filename:     'myfile.pdf',
+            // image:        { type: 'jpeg', quality: 0.98 },
+            // html2canvas:  { scale: 0 },
+            // jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            // };
+            // // New Promise-based usage:
+            // html2pdf().set(opt).from(element).save();
+            // // Old monolithic-style usage:
+            // html2pdf(element, opt);
+            var element = document.getElementById('cv_contaner');
+            html2pdf(element).form().save();
+        }
+
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <script>
+            var areacontent = document.getElementsByClassName('titles_content');
+            var areacontentvalue = areacontent.value;
+            console.log(areacontentvalue);
+
+        </script>
+    </body>    
+</html>
+
