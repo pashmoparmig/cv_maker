@@ -67,8 +67,9 @@ hr{
 
 }
 label{
-    color: rgba(76, 56, 174, 0.739);
+    color: rgba(42, 32, 93, 0.947);
     font-size: 23px;
+    text-transform: uppercase;
 }
 input{
     border: 0;
