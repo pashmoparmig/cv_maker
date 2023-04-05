@@ -8,8 +8,10 @@
     </head>
     <body>
         <button onclick="grneratepdf()">Dowenload PDF</button>
+        <button onclick="grneratepdf()"> generat now</button>
         <!-- <button onclick="grneratepdf()"> generat now</button> -->
-        <!-- <button onclick="grneratepdf()"> generat now</button> -->
+        <button>edit</button> <button>%</button>
+
         <!-- <button onclick="grneratepdf()"> generat now</button> -->
 
         <div class="all_window">
@@ -103,24 +105,34 @@
                     <input type="text"><button> تعديل لينكدان </button><br>
                     
                 </div>-->
-                    <!-- <table>
-                        <tr>
-                            <td>d</td>
-                            <td>d</td>
-                            <td>d</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                         </tr>
-                         <tr>
-                            <td>2</td>
-                            <td></td>
-                            <td>2</td>
-                        </tr>
-                    </table> -->
-                    <form class="info">
+
+                <table>
+                    <tr>
+                        <td><label>name</label></td>
+                        <td><input onkeyup="copying()" id="inp_name" value="khaled mohamed ahmed"></td>
+                    </tr>
+                    <tr>
+                        <td><label >job title</label></td>
+                        <td><input onkeyup="copying()"  id="inp_job" value="web developer"></td>
+                     </tr>
+                     <tr>
+                        <td><label>phone</label></td>
+                        <td><input onkeyup="copying()"  id="inp_phone" value="0111460662444"></td>
+                    </tr>
+                    <tr>
+                        <td><label>whatsup</label></td>
+                        <td><input onkeyup="copying()"  id="inp_whats" value="+2 01114606624"></td>
+                    </tr>
+                    <tr>
+                        <td><label>email </label></td>
+                        <td><input onkeyup="copying()"  id="inp_email" value="khaledzaeed12@gmail.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label>linkedin</label></td>
+                        <td><input onkeyup="copying()"  id="inp_linkedin" value="www.linkedin.com/in"></td>
+                    </tr>
+                </table>
+                    <!-- <form class="info">
                         <label>name</label>
                         <input onkeyup="copying()" id="inp_name" value="khaled mohamed ahmed"><br>
                         <label >job title</label>
@@ -135,7 +147,7 @@
                         <input onkeyup="copying()"  id="inp_email" value="khaledzaeed12@gmail.com"><br>
                         <label>linkedin</label>
                         <input onkeyup="copying()"  id="inp_linkedin" value="www.linkedin.com/in">
-                    </form><br>
+                    </form><br> -->
                     <form>
                         <label>about :</label><br>
                         <!-- <textarea onkeyup="copying()"  id="inp_about" role="15"  cols="80" ></textarea> -->
@@ -223,13 +235,7 @@
             
         </div> -->
         
-        <script>
-
-
-
-                    
-
-
+        <!-- <script>
                     function testy(){
 
                         // console.log(name, phone, email, linkedin, about,edu_1,exper_1.cert_1,skil_1);
@@ -247,7 +253,6 @@
 
                     }
                     
-
                         /*var name = document.getElementById('name').innerHTML;
                         var phone = document.getElementById('phone').innerHTML;
                         var email = document.getElementById('email').innerHTML;
@@ -283,110 +288,10 @@
                         var skil_6 = document.getElementById('skil_6').innerHTML;
                         var skil_7 = document.getElementById('skil_7').innerHTML;
                         var skil_8 = document.getElementById('skil_8').innerHTML;
+        </script> -->
 
 
-
-
-                    function copying() {
-                        document.getElementById('name').innerHTML = document.getElementById('inp_name').value;
-                        document.getElementById('job_title').innerHTML = document.getElementById('inp_job').value;
-                        document.getElementById('phone').innerHTML = document.getElementById('inp_phone').value;
-                        document.getElementById('whatsup').innerHTML = document.getElementById('inp_whats').value;
-                        document.getElementById('email').innerHTML = document.getElementById('inp_email').value;
-                        document.getElementById('linkedin').innerHTML = document.getElementById('inp_linkedin').value;
-                        
-                        document.getElementById('about').innerHTML = document.getElementById('inp_about').value;
-
-                        document.getElementById('edu_1').innerHTML = document.getElementById('inp_edu1').value;
-                        document.getElementById('edu_2').innerHTML = document.getElementById('inp_edu2').value;
-
-                        document.getElementById('exper_1').innerHTML = document.getElementById('inp_exp1').value;
-                        document.getElementById('exper_2').innerHTML = document.getElementById('inp_exp2').value;
-                        document.getElementById('exper_3').innerHTML = document.getElementById('inp_exp3').value;
-                        document.getElementById('exper_4').innerHTML = document.getElementById('inp_exp4').value;
-                        document.getElementById('exper_5').innerHTML = document.getElementById('inp_exp5').value;
-                        document.getElementById('exper_6').innerHTML = document.getElementById('inp_exp6').value;
-                        document.getElementById('exper_7').innerHTML = document.getElementById('inp_exp7').value;
-                        document.getElementById('exper_8').innerHTML = document.getElementById('inp_exp8').value;
-                        document.getElementById('exper_9').innerHTML = document.getElementById('inp_exp9').value;
-                        document.getElementById('exper_10').innerHTML = document.getElementById('inp_exp10').value;
-
-                        document.getElementById('cert_1').innerHTML = document.getElementById('inp_cert1').value;
-                        document.getElementById('cert_2').innerHTML = document.getElementById('inp_cert2').value;
-                        document.getElementById('cert_3').innerHTML = document.getElementById('inp_cert3').value;
-                        document.getElementById('cert_4').innerHTML = document.getElementById('inp_cert4').value;
-                        document.getElementById('cert_5').innerHTML = document.getElementById('inp_cert5').value;
-                        document.getElementById('cert_6').innerHTML = document.getElementById('inp_cert6').value;
-                        
-                        document.getElementById('skil_1').innerHTML = document.getElementById('inp_skil_1').value;
-                        document.getElementById('skil_2').innerHTML = document.getElementById('inp_skil_2').value;
-                        document.getElementById('skil_3').innerHTML = document.getElementById('inp_skil_3').value;
-                        document.getElementById('skil_4').innerHTML = document.getElementById('inp_skil_4').value;
-                        document.getElementById('skil_5').innerHTML = document.getElementById('inp_skil_5').value;
-                        document.getElementById('skil_6').innerHTML = document.getElementById('inp_skil_6').value;
-                        document.getElementById('skil_7').innerHTML = document.getElementById('inp_skil_7').value;
-                        document.getElementById('skil_8').innerHTML = document.getElementById('inp_skil_8').value;
-                        console.log(skil_1,inp_skil_1);
-                        
-                        
-                    };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            var mydiv = document.getElementById('content');
-            
-            function grneratepdf() {
-            // html2pdf(document.body).form().save();
-            // var element = document.getElementById('content');
-            // var opt = {
-            // margin:       1,
-            // filename:     'myfile.pdf',
-            // image:        { type: 'jpeg', quality: 0.98 },
-            // html2canvas:  { scale: 0 },
-            // jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-            // };
-            // // New Promise-based usage:
-            // html2pdf().set(opt).from(element).save();
-            // // Old monolithic-style usage:
-            // html2pdf(element, opt);
-            var element = document.getElementById('cv_contaner');
-            html2pdf(element).form().save();
-        }
-
-        </script>
-        <br>
-        <br>
-        <br>
-        <br>
-        <script>
-            var areacontent = document.getElementsByClassName('titles_content');
-            var areacontentvalue = areacontent.value;
-            console.log(areacontentvalue);
-
-        </script>
+        <script src="javascript.js"></script>
     </body>    
 </html>
 
