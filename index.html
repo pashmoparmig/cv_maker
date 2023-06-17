@@ -5,34 +5,42 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="https://fontawesome.com/v5/icons/folder-open?f=classic&s=solid" crossorigin="anonymous"></script> -->
     </head>
     <body>
-        <button onclick="grneratepdf()">Dowenload PDF</button>
-<!--         <button onclick="grneratepdf()"> generat now</button> -->
+        <title>cv maker</title>
+
+        <button onclick="grneratepdf()">
+            Dowenload PDF
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="20"><path d="M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z" fill="#fffff"></path></svg>          -->
+            <!-- <img src="https://cdn-icons-png.flaticon.com/512/2926/2926214.png"> -->
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath d='M3 19H21V21H3V19ZM13 13.1716L19.0711 7.1005L20.4853 8.51472L12 17L3.51472 8.51472L4.92893 7.1005L11 13.1716V2H13V13.1716Z' fill='%23000'%3E%3C/path%3E%3C/svg%3E">
+        </button>
         <!-- <button onclick="grneratepdf()"> generat now</button> -->
-<!--         <button>edit</button> <button>%</button> -->
+        <!-- <button onclick="grneratepdf()"> generat now</button> -->
+        <!-- <button>edit</button> <button>%</button> -->
 
         <!-- <button onclick="grneratepdf()"> generat now</button> -->
 
         <div class="all_window">
             <div class="cv_contaner" id="cv_contaner">
-                <h1 id="name" >khaled mohamed ahmed</h1>
+                <h1 id="name" >khaled mohamed</h1>
                 <h2 id="job_title">web developer</h2>
                 <div class="call">
                     
-                      <p id="phone">phone/  01114606624</p>
-                      <p id="whatsup">whatsup/ +2 01114606624</p>
-                      <p id="email">email/ khaledzaeed12@gmail.com</p>
-                      <p id="linkedin">https://www.linkedin.com/in/khaled-mohamed-ahmed</p>
+                      <p id="phone">phone/  01234567890</p>
+                      <p id="whatsup">whatsup/ +2 01234567890</p>
+                      <p id="email">email/ youremail@gmail.com</p>
+                      <p id="linkedin">https://www.linkedin.com/in/</p>
                 </div>
                 <div class="about">
-                    <h2>about <hr></h2> 
+                    <h2 id="t_about">about <hr></h2> 
                     <p id="about">I am 27 years old I have a bachelor's degree in management information systems, I am looking
                         for a full time job, I am good at English, And I am exempted from military service
                     </p>
                 </div>
                 <div class="Education">
-                    <h2>education <hr></h2>
+                    <h2 id="t_education">education <hr></h2>
                     <p id="edu_1">
                         2017 - 2020 | Bachelor's degree Management Information Systems
                     </p>
@@ -40,9 +48,21 @@
                         Pharaohs Higher Institute for Computers and Management Information Systems
                         GPA is very good
                     </p>
+                    <p id="edu_3">
+                        Pharaohs Higher Institute for Computers and Management Information Systems
+                        GPA is very good
+                    </p>
+                    <p id="edu_4">
+                        Pharaohs Higher Institute for Computers and Management Information Systems
+                        GPA is very good
+                    </p>
+                    <p id="edu_5">
+                        Pharaohs Higher Institute for Computers and Management Information Systems
+                        GPA is very good
+                    </p>
                 </div>
                 <div class="Experience">
-                    <h2>experience <hr></h2>
+                    <h2 id="t_experience">experience <hr></h2>
                     <p  id="exper_1">Blogging and writing content for websites</p>  
                     <p  id="exper_2">february 2022 - may 2022</p> 
                     <p  id="exper_3">Website Administrator  </p>
@@ -56,7 +76,7 @@
 
                 </div>
                 <div class="Certificates">
-                    <h2>certificates <hr></h2>
+                    <h2 id="t_certificates">certificates <hr></h2>
                     <p id="cert_1">
                         CCNA networking course
                     </p>
@@ -75,10 +95,22 @@
                     <p id="cert_6">
                         (Certificate of Attendance) An event for Android and desktop applications
                     </p>
+                    <p id="cert_7">
+                        (Certificate of Attendance) An event for Android and desktop applications
+                    </p>
+                    <p id="cert_8">
+                        (Certificate of Attendance) An event for Android and desktop applications
+                    </p>
+                    <p id="cert_9">
+                        (Certificate of Attendance) An event for Android and desktop applications
+                    </p>
+                    <p id="cert_10">
+                        (Certificate of Attendance) An event for Android and desktop applications
+                    </p>
                 </div>
                 
                 <div class="Skills">
-                    <h2>skills <hr></h2>
+                    <h2 id="t_skills">skills <hr></h2>
                     <p id="skil_1">Use of microsoft office </p>
                     <p id="skil_2">Use of Google Apps</p>
                     <p id="skil_3">SEO and Google Analytics</p>
@@ -87,17 +119,53 @@
                     <p id="skil_6">Photo editing</p>
                     <p id="skil_7">Writing content for blogs</p>
                     <p id="skil_8">good in English</p>
+                    <p id="skil_9">good in English</p>
+                    <p id="skil_10">good in English</p>
                 </div>
             </div>
 
             <div class="sittings"> 
-                <section class="basics_settings">
-                    <button>edit</button> <button>%</button>
-                    <button>edit</button> <button>%</button>
-                    <button>edit</button> <button>%</button>
+            <div class="top_but">
+                <button id="delat" onclick="delatall()">
+                    <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2014%2014%22%20height%3D%2232%22%20width%3D%2232%22%20stroke-width%3D%221%22%3E%3Cg%3E%3Cline%20x1%3D%221%22%20y1%3D%223.5%22%20x2%3D%2213%22%20y2%3D%223.5%22%20fill%3D%22none%22%20stroke%3D%22%23d10a1a%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3Cpath%20d%3D%22M2.5%2C3.5h9a0%2C0%2C0%2C0%2C1%2C0%2C0v9a1%2C1%2C0%2C0%2C1-1%2C1h-7a1%2C1%2C0%2C0%2C1-1-1v-9A0%2C0%2C0%2C0%2C1%2C2.5%2C3.5Z%22%20fill%3D%22none%22%20stroke%3D%22%23d10a1a%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M4.5%2C3.5V3a2.5%2C2.5%2C0%2C0%2C1%2C5%2C0v.5%22%20fill%3D%22none%22%20stroke%3D%22%23d10a1a%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cline%20x1%3D%225.5%22%20y1%3D%225.5%22%20x2%3D%225.5%22%20y2%3D%2211%22%20fill%3D%22none%22%20stroke%3D%22%23d10a1a%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3Cline%20x1%3D%228.5%22%20y1%3D%225.5%22%20x2%3D%228.5%22%20y2%3D%2211%22%20fill%3D%22none%22%20stroke%3D%22%23d10a1a%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                </button>
+                <!-- <button id="reset">
+                    <img src="https://th.bing.com/th/id/R.49e01ff59420cd9e9fabb04dc928753a?rik=fwZu9gIljjJDCw&pid=ImgRaw&r=0">
+                </button> -->
+            </div>
+
+
+
+
+
+                <section class="basics_settings"> 
+
+                    <form>
+                        <label>الاسم</label><input id="tite_color" onchange="nam_color()" type="color" value="#212171">
+                    </form>
+                    <form>
+                        <label>الوظيفة</label><input id="jobe_color" onchange="job_color()" type="color" value="#212171">
+                    </form>
+                    <form>
+                        <label>العناوين</label><input id="tits_color" onchange="titls_color()" type="color" value="#212171">
+                    </form>
+                    <form>
+                        <label>النصوص</label><input id="par_color" onchange="parag_color()" type="color" value="#00000">
+                    </form><br>
+                    <!-- <button>edit</button> <button>%</button> -->
+                    <!-- <button>edit</button> <button>%</button> -->
+                    <!-- <button>edit</button> <button>%</button> -->
                     <!-- <input type="color"><br><br> -->
               
                 </section>
+                                        <!-- rang fonts -->
+                <form class="form_rang" style="display:block; width: 95%;">
+                    <input id="font_rang" onchange="siz_rang()" type="range" value="80">
+                    <input id="font_rang2" onchange="siz_rang()" type="range" value="90">
+                    <input id="font_rang3" onchange="siz_rang()" type="range" value="85">
+                    <input id="font_rang4" onchange="siz_rang()" type="range" value="60">
+                </form>
+
                <!--- <div> 
                     <input type="text"><button> تعديل الاسم </button><br>
                     <input type="text"><button> تعديل الرقم </button><br>
@@ -109,7 +177,7 @@
                 <table>
                     <tr>
                         <td><label>name</label></td>
-                        <td><input onkeyup="copying()" id="inp_name" value="khaled mohamed ahmed"></td>
+                        <td><input onkeyup="copying()" id="inp_name" value="khaled mohamed"></td>
                     </tr>
                     <tr>
                         <td><label >job title</label></td>
@@ -117,21 +185,21 @@
                      </tr>
                      <tr>
                         <td><label>phone</label></td>
-                        <td><input onkeyup="copying()"  id="inp_phone" value="0111460662444"></td>
+                        <td><input onkeyup="copying()"  id="inp_phone" value="01234567890"></td>
                     </tr>
                     <tr>
                         <td><label>whatsup</label></td>
-                        <td><input onkeyup="copying()"  id="inp_whats" value="+2 01114606624"></td>
+                        <td><input onkeyup="copying()"  id="inp_whats" value="+2 01234567890"></td>
                     </tr>
                     <tr>
                         <td><label>email </label></td>
-                        <td><input onkeyup="copying()"  id="inp_email" value="khaledzaeed12@gmail.com"></td>
+                        <td><input onkeyup="copying()"  id="inp_email" value="youremail@gmail.com"></td>
                     </tr>
                     <tr>
                         <td><label>linkedin</label></td>
                         <td><input onkeyup="copying()"  id="inp_linkedin" value="www.linkedin.com/in"></td>
                     </tr>
-                </table>
+                </table> <br>
                     <!-- <form class="info">
                         <label>name</label>
                         <input onkeyup="copying()" id="inp_name" value="khaled mohamed ahmed"><br>
@@ -159,6 +227,9 @@
                         <!-- <textarea onkeyup="copying()" id="inp_edu2" role="5" cols="80"></textarea> -->
                         <input onkeyup="copying()" id="inp_edu1" value=" 2017 - 2020 | Bachelor's degree Management Information Systems "><br>
                         <input onkeyup="copying()" id="inp_edu2" value=" Pharaohs Higher Institute for Computers and Management Information Systems GPA is very good "><br>
+                        <input onkeyup="copying()" id="inp_edu3" value=" Pharaohs Higher Institute for Computers and Management Information Systems GPA is very good "><br>
+                        <input onkeyup="copying()" id="inp_edu4" value=" Pharaohs Higher Institute for Computers and Management Information Systems GPA is very good "><br>
+                        <input onkeyup="copying()" id="inp_edu5" value=" Pharaohs Higher Institute for Computers and Management Information Systems GPA is very good "><br>
                         <!-- <input class="areacontent" value="123"> -->
                     </form><br>
                     <form>
@@ -173,7 +244,8 @@
                         <input id="inp_exp8" onkeyup="copying()" type="text" value="december 2020 - april 2021">
                         <input id="inp_exp9" onkeyup="copying()" type="text" value="Systems Administrator ">
                         <input id="inp_exp10" onkeyup="copying()"type="text" value="october 2020 - december 2020">
-                        <br><icon>+</icon>
+                        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2014%2014%22%20height%3D%2232%22%20width%3D%2232%22%20stroke-width%3D%221%22%3E%3Cg%3E%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%226.5%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fcircle%3E%3Cg%3E%3Cline%20x1%3D%227%22%20y1%3D%224%22%20x2%3D%227%22%20y2%3D%2210%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3Cline%20x1%3D%224%22%20y1%3D%227%22%20x2%3D%2210%22%20y2%3D%227%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                        <!-- <br><icon>+</icon> -->
                     </form><br>
                     <form>
                         <label>Certificates :</label><br>
@@ -183,7 +255,12 @@
                         <input id="inp_cert4" onkeyup="copying()" type="text" value="(Certificate of attendance) Facebook Bot Event"><br>
                         <input id="inp_cert5" onkeyup="copying()" type="text" value="(Certificate of Attendance) An event for Android and desktop applications">
                         <input id="inp_cert6" onkeyup="copying()" type="text" value="(Certificate of Attendance) An event for Android and desktop applications">
-                        <br><icon>+</icon>
+                        <input id="inp_cert7" onkeyup="copying()" type="text" value="(Certificate of Attendance) An event for Android and desktop applications">
+                        <input id="inp_cert8" onkeyup="copying()" type="text" value="(Certificate of Attendance) An event for Android and desktop applications">
+                        <input id="inp_cert9" onkeyup="copying()" type="text" value="(Certificate of Attendance) An event for Android and desktop applications">
+                        <input id="inp_cert10" onkeyup="copying()" type="text" value="(Certificate of Attendance) An event for Android and desktop applications">
+                        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2014%2014%22%20height%3D%2232%22%20width%3D%2232%22%20stroke-width%3D%221%22%3E%3Cg%3E%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%226.5%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fcircle%3E%3Cg%3E%3Cline%20x1%3D%227%22%20y1%3D%224%22%20x2%3D%227%22%20y2%3D%2210%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3Cline%20x1%3D%224%22%20y1%3D%227%22%20x2%3D%2210%22%20y2%3D%227%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                        <!-- <br><icon>+</icon> -->
                     </form><br>
                     <form>
                         <label>Skills :</label><br>
@@ -195,7 +272,11 @@
                         <input id="inp_skil_6" onkeyup="copying()" type="text" value="Web content development"><br>
                         <input id="inp_skil_7" onkeyup="copying()" type="text" value="Photo editing"><br>
                         <input id="inp_skil_8" onkeyup="copying()" type="text" value="Writing content for blogs"><br>
-                        <icon>+</icon>
+                        <input id="inp_skil_9" onkeyup="copying()" type="text" value="Writing content for blogs"><br>
+                        <input id="inp_skil_10" onkeyup="copying()" type="text" value="Writing content for blogs"><br>
+                        <!-- <icon>+</icon> -->
+                        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2014%2014%22%20height%3D%2232%22%20width%3D%2232%22%20stroke-width%3D%221%22%3E%3Cg%3E%3Ccircle%20cx%3D%227%22%20cy%3D%227%22%20r%3D%226.5%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fcircle%3E%3Cg%3E%3Cline%20x1%3D%227%22%20y1%3D%224%22%20x2%3D%227%22%20y2%3D%2210%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3Cline%20x1%3D%224%22%20y1%3D%227%22%20x2%3D%2210%22%20y2%3D%227%22%20fill%3D%22none%22%20stroke%3D%22%234c4ce5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fline%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+
                     </form>
 
 
