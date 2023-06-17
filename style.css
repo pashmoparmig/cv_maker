@@ -15,28 +15,38 @@
 .cv_contaner{
     /* background-color: rgb(223, 223, 223); */
     /* background-color: rgb(104, 16, 16); */
-    padding: 30px 50px;
+    padding: 40px 60px 40px 45px;
     margin-top: 0;
     /* width: 1748px; */
     /* margin: auto; */
     display:block;
-    width: 90%;
+    /* width: fit-content; */
+    width: 100%;
     height:  auto;
     /* height: 2480px;  */
 
 }
-/* .cv_contaner div{
-    width: auto;
-} */
+.cv_contaner div{
+    padding-right: 14%;
+}
 
+svg{
+    /* margin: 8px; */
+    align-items: center;
+}
+img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
 p{
-    width: 95%;
+    width: 100%;
     /* max-width:fit-content; */
-    overflow:visible;
+    overflow: hidden;
     font-size: 14px;
 }
 h1{
-    color: rgb(33, 33, 113);
+    color: #212171;
     margin: 0 0 20px 0;
     font-size:xx-large;
 }
@@ -45,10 +55,12 @@ h2{
     margin: 10px 0 10px 0;
     text-transform: uppercase;
     font-size: larger;
+    overflow: hidden;
+    /* width: fit-content; */
 }
 
 hr{
-    width: 97%;
+    width: 98%;
 }
 
 .sittings{
@@ -63,13 +75,21 @@ hr{
     /* position: fixed; */
     display:inline;
     float: right;
-
-
 }
 label{
     color: rgba(42, 32, 93, 0.947);
     font-size: 23px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+}
+.basics_settings form input{
+    /* width: 25%; */
+    height: 30px;
+    /* margin: 0 1%; */
+}
+
+form{
+    display: inline;
+    margin: auto;
 }
 input{
     border: 0;
@@ -78,34 +98,84 @@ input{
     width:100%;
     height: 40px;
     /* display: flex; */
-    padding-left: 10px;
+    padding: 0 10px;
     margin-bottom: 10px;
     font-size: 20px;
+    align-items: center;
+}
+.basics_settings form {
+    /* width:70%; */
+    /* font-size: 10px; */
+    padding: 15px 20px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.basics_settings{
+    /* background-color: rgba(76, 56, 174, 0.739); */
+    width: 95%;
+    /* height: 200px; */
+    padding: 20px 0 ;
+    margin: auto;
+    /* margin-bottom: 30px; */
+    /* display: none; */
+    display: flex;
 
 }
-form input{
-    width:100%;
-    font-size: 20px;
-}
+
 .info input, .call input{
     /* width:fit-content; */
     width: 80%;
     float: right;
 }
+.form_rang{
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+.form_rang input{
+    width: 20%;
+    height: 40px;
+    margin: auto;
+    /* display: inline-block; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* transform: scale(1); */
+}
+/* #font_rang{
+    transform: scale(1);
+    width: 20%;
+}
+#font_rang2{
+    transform: scale(1);
+    width: 20%;
+}
+#font_rang3{
+    transform: scale(1);
+    width: 20%;
+}
+#font_rang4{
+    transform: scale(1);
+    width: 20%;
+} */
+.top_but{
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.top_but button{
+    /* width: 49%; */
+    margin: auto;
+}
                         /*     big titles       */
                /*  eadit buttons */
-.basics_settings{
-    /* background-color: rgba(76, 56, 174, 0.739); */
-    width: 90%;
-    /* height: 200px; */
-    padding: 20px 0 ;
-    margin: auto;
-    margin-bottom: 30px;
-    display: none;
-}
+
 
 button{
-    /* width: 80px; */
+    /* width: 90%; */
+    margin: auto;
     /* height: 30px; */
     padding: 15px 30px;
     border-radius: 5px;
@@ -145,9 +215,9 @@ table input{
                  /*  --- for phone ---    */
 @media (max-width:750px){
     .sittings{
-        width: 90%;
+        width: 95%;
         /* height: 100vh; */
-        background-color: rgb(215, 66, 24);
+        /* background-color: rgb(215, 66, 24); */
         /* float: left; */
         display: block;
         /* padding: 0 30px; */
@@ -177,9 +247,9 @@ table input{
 .cv_contaner{
     /* flex-direction: column; */
     display:block;
-    width: 90%;
+    width: 95%;
     /* margin: auto; */
-    background-color: aqua;
+    /* background-color: aqua; */
 
 };
 }
